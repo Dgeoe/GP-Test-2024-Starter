@@ -7,18 +7,38 @@
 
 [node name="root" type="Node2D"]
 
-[node name="Fire" type="Sprite2D" parent="."]
-position = Vector2(118, 852)
-scale = Vector2(0.37, 0.25)
-texture = ExtResource("1_h7m3w")
-
 [node name="Centre" type="Sprite2D" parent="."]
 position = Vector2(508, 520)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_056lq")
 
-[node name="Node2D" parent="." instance=ExtResource("2_w4vim")]
-position = Vector2(-4, 0)
+[node name="Ground" parent="." instance=ExtResource("2_w4vim")]
+position = Vector2(0, 64)
+
+[node name="fire2" type="Sprite2D" parent="Ground"]
+position = Vector2(334, 848)
+scale = Vector2(0.37, 0.25)
+texture = ExtResource("1_h7m3w")
+
+[node name="fire3" type="Sprite2D" parent="Ground"]
+position = Vector2(710, 846)
+scale = Vector2(0.37, 0.25)
+texture = ExtResource("1_h7m3w")
+
+[node name="fire4" type="Sprite2D" parent="Ground"]
+position = Vector2(906, 848)
+scale = Vector2(0.37, 0.25)
+texture = ExtResource("1_h7m3w")
+
+[node name="fire5" type="Sprite2D" parent="Ground"]
+position = Vector2(518, 848)
+scale = Vector2(0.37, 0.25)
+texture = ExtResource("1_h7m3w")
+
+[node name="Fire" type="Sprite2D" parent="Ground"]
+position = Vector2(118, 848)
+scale = Vector2(0.37, 0.25)
+texture = ExtResource("1_h7m3w")
 
 [node name="Node2D2" parent="." instance=ExtResource("3_ycfp7")]
 
@@ -29,23 +49,3 @@ offset_right = 1018.0
 offset_bottom = 114.0
 scale = Vector2(2, 2)
 text = "1-20 (but doesn't work)"
-
-[node name="fire2" type="Sprite2D" parent="."]
-position = Vector2(334, 852)
-scale = Vector2(0.37, 0.25)
-texture = ExtResource("1_h7m3w")
-
-[node name="fire3" type="Sprite2D" parent="."]
-position = Vector2(710, 850)
-scale = Vector2(0.37, 0.25)
-texture = ExtResource("1_h7m3w")
-
-[node name="fire4" type="Sprite2D" parent="."]
-position = Vector2(906, 852)
-scale = Vector2(0.37, 0.25)
-texture = ExtResource("1_h7m3w")
-
-[node name="fire5" type="Sprite2D" parent="."]
-position = Vector2(518, 852)
-scale = Vector2(0.37, 0.25)
-texture = ExtResource("1_h7m3w")

@@ -19,7 +19,7 @@ func _button_pressed():
 	print("Hello world!")
 	var scene = preload("res://Obj2bspawned.tscn")
 	var instance = scene.instantiate()
-	instance.position = Vector2(X, Y)
+	#instance.position = Vector2(X, Y)
 	add_child(instance)
 	
 	#Play sound

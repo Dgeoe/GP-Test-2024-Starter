@@ -10,6 +10,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var currentPOS = position.y
-	if currentPOS >= 640: 
+	if currentPOS >= 540: 
 		print("delete here")
-		#RigidBody2D.queue_free()
+		self.queue_free()
