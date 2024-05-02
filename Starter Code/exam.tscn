@@ -1,3 +1,15 @@
-[gd_scene format=3 uid="uid://bunyohpobvu8b"]
+[gd_scene load_steps=4 format=3 uid="uid://bunyohpobvu8b"]
+
+[ext_resource type="Texture2D" uid="uid://rb8smo0f45mc" path="res://icon.svg" id="1_8078d"]
+[ext_resource type="PackedScene" uid="uid://coehvu7s0l553" path="res://LandingZone.tscn" id="2_w4vim"]
+[ext_resource type="PackedScene" uid="uid://bx7d2jkxng05j" path="res://Slider.tscn" id="3_ycfp7"]
 
 [node name="root" type="Node2D"]
+
+[node name="Centre" type="Sprite2D" parent="."]
+position = Vector2(508, 520)
+texture = ExtResource("1_8078d")
+
+[node name="Node2D" parent="." instance=ExtResource("2_w4vim")]
+
+[node name="Node2D2" parent="." instance=ExtResource("3_ycfp7")]

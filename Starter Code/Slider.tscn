@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx7d2jkxng05j"]
+
+[ext_resource type="Script" path="res://SpawnSlider.gd" id="1_slara"]
+[ext_resource type="Script" path="res://Spawn.gd" id="2_wmbak"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = 39.0
+offset_top = 73.0
+offset_right = 248.0
+offset_bottom = 89.0
+scale = Vector2(2, 2)
+min_value = 1.0
+max_value = 20.0
+value = 1.0
+tick_count = 20
+ticks_on_borders = true
+script = ExtResource("1_slara")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HSlider"]
+layout_mode = 0
+offset_left = 212.0
+offset_right = 252.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+offset_left = 42.0
+offset_top = 156.0
+offset_right = 452.0
+offset_bottom = 236.0
+script = ExtResource("2_wmbak")
+
+[connection signal="drag_ended" from="HSlider" to="HSlider" method="_on_drag_ended"]
+[connection signal="drag_started" from="HSlider" to="HSlider" method="_on_drag_started"]
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_value_changed"]
