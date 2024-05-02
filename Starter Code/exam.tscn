@@ -11,5 +11,6 @@ position = Vector2(508, 520)
 texture = ExtResource("1_8078d")
 
 [node name="Node2D" parent="." instance=ExtResource("2_w4vim")]
+position = Vector2(0, 362)
 
 [node name="Node2D2" parent="." instance=ExtResource("3_ycfp7")]

@@ -18,5 +18,10 @@ func _button_pressed():
 	var scene = preload("res://Obj2bspawned.tscn")
 	var instance = scene.instantiate()
 	add_child(instance)
+	var currentPOS = instance.position.y
+	if currentPOS >= 640: 
+		print("delete here")
+		instance.queue_free()
+	
 	
 
