@@ -11,8 +11,8 @@ func _ready():
 	
 	
 func _button_pressed():
-	var X = randi() % 500
-	var Y = randi() % 500
+	var X = randi() % 700
+	var Y = randi() % 200
 	print("Hello world!")
 	var scene = preload("res://Obj2bspawned.tscn")
 	var instance = scene.instantiate()
@@ -25,6 +25,7 @@ func _button_pressed():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	#delete function (queue_free) should be here if I was better 
 	pass
 	
 
