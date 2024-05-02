@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx7d2jkxng05j"]
+[gd_scene load_steps=4 format=3 uid="uid://bx7d2jkxng05j"]
 
 [ext_resource type="Script" path="res://SpawnSlider.gd" id="1_slara"]
 [ext_resource type="Script" path="res://Spawn.gd" id="2_wmbak"]
+[ext_resource type="AudioStream" uid="uid://iv2dtdq15am2" path="res://demonic-woman-scream-6333.mp3" id="3_0r6pj"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -30,6 +31,9 @@ offset_top = 156.0
 offset_right = 452.0
 offset_bottom = 236.0
 script = ExtResource("2_wmbak")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button"]
+stream = ExtResource("3_0r6pj")
 
 [connection signal="drag_ended" from="HSlider" to="HSlider" method="_on_drag_ended"]
 [connection signal="drag_started" from="HSlider" to="HSlider" method="_on_drag_started"]
